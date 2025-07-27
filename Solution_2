@@ -1,0 +1,23 @@
+class Solution:
+    def countTrapezoids(self, points):
+        def comb(n): return n * (n - 1) // 2 if n >= 2 else 0
+        MOD = 10**9 + 7
+        from collections import defaultdict
+
+        y_groups = defaultdict(list)
+        for x, y in points:
+            y_groups[y].append(x)
+
+        combs = []
+        for xs in y_groups.values():
+            c = comb(len(xs))
+            if c:
+                combs.append(c)
+
+        total_combs = sum(combs)
+        res = 0
+        for c in combs:
+            total_combs -= c
+            res = (res + c * total_combs) % MOD
+
+        return res
