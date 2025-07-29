@@ -1,5 +1,5 @@
 # Count-Number-of-Trapezoids-I  
-Link: https://leetcode.com/contest/weekly-contest-459/problems/count-number-of-trapezoids-i/description/
+Link: https://leetcode.com/contest/weekly-contest-459/problems/count-number-of-trapezoids-i/submissions/1715217130/
 
 You are given a 2D integer array points, where points[i] = [xi, yi] represents the coordinates of the ith point on the Cartesian plane.
 
